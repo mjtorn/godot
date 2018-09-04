@@ -97,7 +97,7 @@ public:
 		_FORCE_INLINE_ SelfList<T> *first() { return _first; }
 		_FORCE_INLINE_ const SelfList<T> *first() const { return _first; }
 		_FORCE_INLINE_ List() { _first = NULL; }
-		_FORCE_INLINE_ ~List() { ERR_FAIL_COND(_first != NULL); }
+		_FORCE_INLINE_ ~List() { /*ERR_FAIL_COND(_first != NULL);*/ }
 	};
 
 private:
